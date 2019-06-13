@@ -36,12 +36,7 @@ a{
     font-size: larger;
 }
 
-.body-bg{
-    background-image: url(https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2016/10/Japanese-BGM-1024x682.jpg);
-    height: 100vh;
-    background-size: cover;
-   
-}
+
 
 .bg-white {
     background-color: #f4f4f4;
