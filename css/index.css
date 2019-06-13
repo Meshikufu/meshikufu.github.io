@@ -274,17 +274,20 @@ a{
     text-align: center;
 }
 @media all and (max-width: 900px) {
+    .container{
+        min-height: 100%;
+    min-height: 130vh;
+    }
     .logo{
         grid-area: header4;
         transform: scale(0.8);
         margin-left: 40px;
-
     }
     .footer{
         position: flex;
-  left: 0;
-  bottom: 0;
-    width: 100%;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
     .nav ul{
         transition: 2s;
@@ -293,10 +296,7 @@ a{
     .main{
         margin:0;
     }
-    .container{
-        grid-template-columns: 0px 1fr 0px;
-        
-    }
+  
     .left{
         display: none;
     }
@@ -305,6 +305,9 @@ a{
     }
     .sidebar{
         margin-top: 20px;
+    }
+    .footer{
+        
     }
 }
 @media all and (max-width: 600px) {
