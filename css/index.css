@@ -307,7 +307,11 @@ a{
         margin-top: 20px;
     }
     .footer{
-        
+        position: flex;
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
     }
 }
 @media all and (max-width: 600px) {
