@@ -274,7 +274,7 @@ a{
     text-align: center;
 }
 @media all and (max-width: 900px) {
-    .container{
+    .container-fix1{
         min-height: 100%;
     min-height: 140vh;
     }
@@ -308,9 +308,10 @@ a{
     }
     .footer{
         position: flex;
+        
     left: 0;
     bottom: 0;
-    
+    height: 100px;
     width: 100%;
     }
 }
@@ -346,5 +347,9 @@ a{
     }
     .content p{
         font-size: 18px;
+    }
+    .container-fix2{
+        min-height: 100%;
+    min-height: 160vh;
     }
 }
