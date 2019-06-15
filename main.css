@@ -1,0 +1,254 @@
+:root {
+    --main-bg-col:#f4f4f4;
+
+    --bg-col:#fff;
+    --pad: 10px;
+    --mar: 15px;
+    --br-rad: 8px;
+    --shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--main-bg-col);
+    color: #555;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    grid-area: header;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: url(https://www.pngkey.com/png/full/339-3398821_quality-modern-facilities-at-the-uralla-bowlo-modern.png);
+    background-size: 100% 100%;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-box{
+    display: flex;
+    list-style: none;
+    margin: 20px 15px 0 0;
+}
+.nav-itm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 60px;
+    height: 20px;
+    margin-right: 15px;
+    color: #555;
+    background:#fff;
+    border: 2px solid #555;
+    transition: 0.5s;
+}
+.nav-itm:hover{
+    box-shadow: 2px 2px 0 #555;
+}
+.active{
+    border: 2px solid #0093AF;
+    color: 	#0093AF ;
+}
+.main{
+    display: grid;
+    grid-template-rows:  70px 1fr 60px;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    height: 100vh;
+}
+.footer{
+    grid-area: footer;
+    background: #555;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "content sidebar";
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: var(--br-rad-main);
+}
+.title{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    margin: 40px 0;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #555;
+}
+.content{
+    grid-area: content;
+}
+.blog h2{
+    text-align: center;
+    margin: 30px;
+}
+.blog p{
+    margin: 5px;
+}
+.blog img{
+    float: right;
+    max-width: 250px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: rgba(255, 0, 0, 0.01);
+    align-content: space-around;
+}
+.sidebar img{
+    width: 100%;
+    border-radius: 2px;
+}
+.sidebar-flex{
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    margin-top: 100px;
+    background: var(--bg-col);
+    margin: 15px 0;
+    box-shadow: 3px 3px 3px grey;
+}
+.sidebar-fix{
+    margin-bottom: 50px;   
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .flex-item {
+    margin: 5px;
+    max-width: 150px;
+    height: 290px;
+    margin-top: 10px;
+  }
+  .grid-item{
+      display: grid;
+      grid-template-rows: 150px 40px 40px 60px;
+  }
+  .grid-itm{
+      display: grid;
+      grid-template-rows: 150px 40px 35px 65px;
+  }
+  .grid-itm h2{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #555;
+  }
+  .grid-itm p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+  }
+ .grid-itm-price del {
+    font-size: 14px;
+    color: rgba(255,0,0, 0.5);  
+    margin-left: 15px;
+ }
+ .grid-itm-price ins {
+    color: green;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 3px 5px;
+  }
+.register-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "register info";
+}
+.register{
+    grid-area: register;
+    place-self: center;
+}
+.info{
+    grid-area: info;
+    place-self: center;
+    text-align: center;
+}
+.info th{
+    padding: 0 45px 0 0;
+    background: aquamarine;
+    border-radius: 3px;
+}
+.info td{
+    background: aliceblue;
+    border-radius: 3px;
+}
+.bg-content{
+    background: var(--bg-col);
+    padding:var(--pad);
+    border-radius: var(--br-rad);
+    margin: var(--mar);
+    box-shadow: var(--shadow);
+}
+.bg-sidebar{
+    background: var(--bg-col);
+    padding:var(--pad);
+    border-radius: var(--br-rad);
+    box-shadow: var(--shadow);
+}
+.bg-sidebar-banner{
+    background: var(--bg-col);
+    border-radius: var(--br-rad);
+    box-shadow: var(--shadow);
+}
+.banner-pad{
+    padding:var(--pad);
+}
+
+
+  @media (max-width: 650px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "content"
+                             "sidebar";
+    }
+    .nav{
+        justify-content: center;
+    }
+    .register-box{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "register"
+                             "info";
+    }
+}
