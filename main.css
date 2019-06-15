@@ -4,6 +4,7 @@
     --bg-col:#fff;
     --pad: 10px;
     --mar: 15px;
+    --mar-side: 15px 0;
     --br-rad: 8px;
     --shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
@@ -165,6 +166,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center; 
+    text-align: center;
     color: #555;
   }
   .grid-itm p{
@@ -187,7 +189,7 @@ a{
     padding: 3px 5px;
   }
 .register-box{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "register info";
 }
@@ -221,6 +223,7 @@ a{
     padding:var(--pad);
     border-radius: var(--br-rad);
     box-shadow: var(--shadow);
+    margin: var(--mar-side);
 }
 .bg-sidebar-banner{
     background: var(--bg-col);
